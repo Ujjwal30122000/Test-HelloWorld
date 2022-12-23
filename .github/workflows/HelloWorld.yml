@@ -28,7 +28,16 @@ jobs:
       # Runs a single command using the runners shell
       - name: Run a one-line script
         run: echo Hello, world!
-
+        
+      - name: Download Json Jar
+        run: wget https://repo.mavenlibs.com/maven/org/json/json/20220924/json-20220924.jar?utm_source=mavenlibs.com
+        
+      - name: pwd
+        run: pwd
+        
+      - name: ls
+        run: ls
+      
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
